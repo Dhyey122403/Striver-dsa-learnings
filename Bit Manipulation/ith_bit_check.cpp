@@ -7,6 +7,6 @@ int main()
     cin >> i;
     int n;
     cin >> n;
-    cout << (((n>>i)&1) == 1); // set ith bit
+    cout << (((n>>i)&1) == 1); // set ith bit right shift
     return 0;
 }
