@@ -24,16 +24,12 @@ class Queue{
             currentSize = 0;
         }
         void enqueue(int val){
-            if(currentSize == maxSize) return;
-            // if(end == -1){
-            //     start = 0;
-            //     end = 0;
-            //     end = (end+1) % maxSize;
-                
-            // }
-            arr[end] = val;
-            end++;
-            currentSize++;
+            if(currentSize == maxSize) cout << "The queue is full" << endl;
+            else{
+                arr[end] = val;
+                end++;
+                currentSize++;   
+            }
         }
         int dequeue(){
             start++;
